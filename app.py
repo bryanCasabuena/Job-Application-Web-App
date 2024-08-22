@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 app.config["SECRET_KEY"] = "myapp"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
+
 db = SQLAlchemy(app)
 
 class Form(db.Model):
